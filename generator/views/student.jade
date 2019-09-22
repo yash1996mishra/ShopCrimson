@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  h1 Student Login
+  
+block login_menu
+
+    style.
+        #centralised_signup
+        {
+            display:none;
+        }
+    script.
+        function display_login()
+        {
+            document.getElementById("centralised_login").style.display = "block";
+            document.getElementById("centralised_signup").style.display = "none";
+        }
+
+        function display_signup()
+        {
+            document.getElementById("centralised_login").style.display = "none";
+            document.getElementById("centralised_signup").style.display = "block";
+        }
+
+    #centralised(align='center')
+        button(onclick = "display_signup()") SignUp
+        button(onclick = "display_login()") Login
+
+    #centralised_login(align='center')
+        form(action="/student" method="POST")
+            p
+                h2 Welcome back!
+            p
+                input(type="text" name="userId" value="Your ID")
+            p
+                input(type="password" name="userPassword" value="Your ID")
+            p
+                input(type="Submit")
+
+    #centralised_signup(align='center')
+        form(action="/student" method="POST")
+            p
+                input(type="text" name="userId" value="Your ID")
+            p
+                input(type="text" name="userName" value="Your Name")
+            p
+                input(type="password" name="userPassword" value="Your ID")
+            p
+                input(type="submit")

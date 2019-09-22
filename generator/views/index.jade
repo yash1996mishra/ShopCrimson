@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 ShopCrimson
+  h2 -- Games and Services --
+  
+block login_menu
+
+  script.
+    function movebar(login_link)
+    {
+      window.location.replace(login_link);
+    }
+
+  each val in login_option
+    p
+    button(onclick = "movebar(' #{val.login_link} ')") #{val.login_type}
+    //input(type="button" onclick="movebar(' #{val.login_link} ')" value="#{val.login_type}")
+
+  p
+    a(href='www.google.com') forgot credentails ?

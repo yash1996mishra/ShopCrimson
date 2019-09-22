@@ -1,0 +1,38 @@
+body {
+  padding: 3%;
+  background-image: url(https://images3.alphacoders.com/627/thumb-1920-627808.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+.centralised
+{
+  align-self: center;
+}
+
+button
+{
+  background-image: url(https://images5.alphacoders.com/943/943749.jpg);
+  background-size: cover;
+  border : 2px solid black;
+  font-size : 24px;
+  width: 20%; 
+}
+
+button:hover
+{
+  background-image: url(https://images8.alphacoders.com/943/thumb-1920-943754.png);
+  background-size : cover;
+  border : 2px solid black;
+  font-size : 24px;
+  width: 20%; 
+}
+
+a:hover 
+{
+  color: #00B7FF;
+}
